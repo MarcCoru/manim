@@ -68,7 +68,7 @@ class VectorScene(Scene):
         self.add(plane)
         return plane
 
-    def add_axes(self, animate=False, color=WHITE, **kwargs):
+    def add_axes(self, animate=False, color=BLACK, **kwargs):
         """
         Adds a pair of Axes to the Scene.
 
@@ -77,7 +77,7 @@ class VectorScene(Scene):
         animate (bool=False)
             Whether or not to animate the addition of the axes through ShowCreation.
         color (str)
-            The color of the axes. Defaults to WHITE.
+            The color of the axes. Defaults to BLACK.
         """
         axes = Axes(color=color, tick_frequency=1)
         if animate:
@@ -101,7 +101,7 @@ class VectorScene(Scene):
         plane = self.add_plane()
         axes = plane.get_axes()
         plane.fade(dimness)
-        axes.set_color(WHITE)
+        axes.set_color(BLACK)
         axes.fade(axes_dimness)
         self.add(axes)
         self.freeze_background()
@@ -181,7 +181,7 @@ class VectorScene(Scene):
             integer_labels (True) : Whether or not to round the coordinates
                                     to integers.
             n_dim (2) : The number of dimensions of the vector.
-            color (WHITE) : The color of the label.
+            color (BLACK) : The color of the label.
 
         Returns
         -------
@@ -491,7 +491,7 @@ class VectorScene(Scene):
             for y in range(-y_max, y_max)
         ])
         dots.set_fill(BLACK, opacity=0)
-        dots_halfway = dots.copy().shift(vector / 2).set_fill(WHITE, 1)
+        dots_halfway = dots.copy().shift(vector / 2).set_fill(BLACK, 1)
         dots_end = dots.copy().shift(vector)
 
         self.play(Transform(

@@ -340,7 +340,7 @@ class Dot(Circle):
         "radius": DEFAULT_DOT_RADIUS,
         "stroke_width": 0,
         "fill_opacity": 1.0,
-        "color": WHITE
+        "color": BLACK
     }
 
     def __init__(self, point=ORIGIN, **kwargs):
@@ -373,7 +373,7 @@ class AnnularSector(Arc):
         "start_angle": 0,
         "fill_opacity": 1,
         "stroke_width": 0,
-        "color": WHITE,
+        "color": BLACK,
     }
 
     def generate_points(self):
@@ -406,7 +406,7 @@ class Annulus(Circle):
         "outer_radius": 2,
         "fill_opacity": 1,
         "stroke_width": 0,
-        "color": WHITE,
+        "color": BLACK,
         "mark_paths_closed": False,
     }
 
@@ -812,7 +812,7 @@ class ArrowTip(Triangle):
 
 class Rectangle(Polygon):
     CONFIG = {
-        "color": WHITE,
+        "color": BLACK,
         "height": 2.0,
         "width": 4.0,
         "mark_paths_closed": True,

@@ -73,7 +73,7 @@ class AnimatedBoundary(VGroup):
 class TracedPath(VMobject):
     CONFIG = {
         "stroke_width": 2,
-        "stroke_color": WHITE,
+        "stroke_color": BLACK,
         "min_distance_to_new_point": 0.1,
     }
 

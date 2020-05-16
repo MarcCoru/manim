@@ -43,7 +43,7 @@ class BitcoinLogo(SVGMobject):
         "file_name": "Bitcoin_logo",
         "height": 1,
         "fill_color": "#f7931a",
-        "inner_color": WHITE,
+        "inner_color": BLACK,
         "fill_opacity": 1,
         "stroke_width": 0,
     }
@@ -60,7 +60,7 @@ class Guitar(SVGMobject):
         "height": 2.5,
         "fill_color": DARK_GREY,
         "fill_opacity": 1,
-        "stroke_color": WHITE,
+        "stroke_color": BLACK,
         "stroke_width": 0.5,
     }
 
@@ -73,7 +73,7 @@ class SunGlasses(SVGMobject):
 
     def __init__(self, pi_creature, **kwargs):
         SVGMobject.__init__(self, **kwargs)
-        self.set_stroke(WHITE, width=0)
+        self.set_stroke(BLACK, width=0)
         self.set_fill(GREY, 1)
         self.set_width(
             self.glasses_width_to_eyes_width * pi_creature.eyes.get_width()
@@ -156,7 +156,7 @@ class AoPSLogo(SVGMobject):
 
     def __init__(self, **kwargs):
         SVGMobject.__init__(self, **kwargs)
-        self.set_stroke(WHITE, width=0)
+        self.set_stroke(BLACK, width=0)
         colors = [BLUE_E, "#008445", GREEN_B]
         index_lists = [
             (10, 11, 12, 13, 14, 21, 22, 23, 24, 27, 28, 29, 30),
@@ -283,7 +283,7 @@ class PatreonLogo(SVGMobject):
     CONFIG = {
         "file_name": "patreon_logo",
         "fill_color": "#F96854",
-        # "fill_color" : WHITE,
+        # "fill_color" : BLACK,
         "fill_opacity": 1,
         "stroke_width": 0,
         "width": 4,
@@ -305,8 +305,8 @@ class VideoIcon(SVGMobject):
         SVGMobject.__init__(self, **kwargs)
         self.center()
         self.set_width(self.width)
-        self.set_stroke(color=WHITE, width=0)
-        self.set_fill(color=WHITE, opacity=1)
+        self.set_stroke(color=BLACK, width=0)
+        self.set_fill(color=BLACK, opacity=1)
 
 
 class VideoSeries(VGroup):
@@ -350,7 +350,7 @@ class Clock(VGroup):
     CONFIG = {}
 
     def __init__(self, **kwargs):
-        circle = Circle(color=WHITE)
+        circle = Circle(color=BLACK)
         ticks = []
         for x in range(12):
             alpha = x / 12.
@@ -419,7 +419,7 @@ class Bubble(SVGMobject):
         "file_name": None,
         "fill_color": BLACK,
         "fill_opacity": 0.8,
-        "stroke_color": WHITE,
+        "stroke_color": BLACK,
         "stroke_width": 3,
     }
 
@@ -557,7 +557,7 @@ class Car(SVGMobject):
             path.add(part)
 
         self.set_height(self.height)
-        self.set_stroke(color=WHITE, width=0)
+        self.set_stroke(color=BLACK, width=0)
         self.set_fill(self.color, opacity=1)
 
         from manimlib.for_3b1b_videos.pi_creature import Randolph
@@ -870,7 +870,7 @@ class PlayingCard(VGroup):
         self.add(Rectangle(
             height=self.height,
             width=self.height / self.height_to_width,
-            stroke_color=WHITE,
+            stroke_color=BLACK,
             stroke_width=2,
             fill_color=self.color,
             fill_opacity=1,

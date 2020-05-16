@@ -205,7 +205,7 @@ class StreamLines(VGroup):
         "virtual_time": 3,
         "n_anchors_per_line": 100,
         "stroke_width": 1,
-        "stroke_color": WHITE,
+        "stroke_color": BLACK,
         "color_by_arc_length": True,
         # Min and max arc lengths meant to define
         # the color range, should color_by_arc_length be True

@@ -42,7 +42,7 @@ class VMobject(Mobject):
         "background_stroke_opacity": 1.0,
         "background_stroke_width": 0,
         # When a color c is set, there will be a second color
-        # computed based on interpolating c to WHITE by with
+        # computed based on interpolating c to BLACK by with
         # sheen_factor, and the display will gradient to this
         # secondary color in the direction of sheen_direction.
         "sheen_factor": 0.0,
@@ -375,7 +375,7 @@ class VMobject(Mobject):
 
     def color_using_background_image(self, background_image_file):
         self.background_image_file = background_image_file
-        self.set_color(WHITE)
+        self.set_color(BLACK)
         for submob in self.submobjects:
             submob.color_using_background_image(background_image_file)
         return self
@@ -948,7 +948,7 @@ class DashedVMobject(VMobject):
     CONFIG = {
         "num_dashes": 15,
         "positive_space_ratio": 0.5,
-        "color": WHITE
+        "color": BLACK
     }
 
     def __init__(self, vmobject, **kwargs):

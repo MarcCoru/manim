@@ -30,7 +30,7 @@ class Mobject(Container):
     Mathematical Object
     """
     CONFIG = {
-        "color": WHITE,
+        "color": BLACK,
         "name": None,
         "dim": 3,
         "target": None,
@@ -605,7 +605,7 @@ class Mobject(Container):
         self.set_submobject_colors_by_gradient(*colors)
         return self
 
-    def set_colors_by_radial_gradient(self, center=None, radius=1, inner_color=WHITE, outer_color=BLACK):
+    def set_colors_by_radial_gradient(self, center=None, radius=1, inner_color=BLACK, outer_color=BLACK):
         self.set_submobject_colors_by_radial_gradient(
             center, radius, inner_color, outer_color)
         return self
@@ -623,7 +623,7 @@ class Mobject(Container):
             mob.set_color(color, family=False)
         return self
 
-    def set_submobject_colors_by_radial_gradient(self, center=None, radius=1, inner_color=WHITE, outer_color=BLACK):
+    def set_submobject_colors_by_radial_gradient(self, center=None, radius=1, inner_color=BLACK, outer_color=BLACK):
         if center is None:
             center = self.get_center()
 

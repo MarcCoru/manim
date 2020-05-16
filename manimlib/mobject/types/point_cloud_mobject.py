@@ -76,7 +76,7 @@ class PMobject(Mobject):
             ])
         return self
 
-    def set_colors_by_radial_gradient(self, center=None, radius=1, inner_color=WHITE, outer_color=BLACK):
+    def set_colors_by_radial_gradient(self, center=None, radius=1, inner_color=BLACK, outer_color=BLACK):
         start_rgba, end_rgba = list(map(color_to_rgba, [start_color, end_color]))
         if center is None:
             center = self.get_center()

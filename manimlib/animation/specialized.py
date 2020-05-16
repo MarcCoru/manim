@@ -3,7 +3,7 @@ import operator as op
 from manimlib.animation.composition import LaggedStart
 from manimlib.animation.transform import ApplyMethod
 from manimlib.animation.transform import Restore
-from manimlib.constants import WHITE
+from manimlib.constants import BLACK
 from manimlib.constants import BLACK
 from manimlib.mobject.geometry import Circle
 from manimlib.mobject.svg.drawings import Car
@@ -54,7 +54,7 @@ class Broadcast(LaggedStart):
         "big_radius": 5,
         "n_circles": 5,
         "start_stroke_width": 8,
-        "color": WHITE,
+        "color": BLACK,
         "remover": True,
         "lag_ratio": 0.2,
         "run_time": 3,

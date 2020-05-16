@@ -259,7 +259,7 @@ class ThreeDAxes(Axes):
 class NumberPlane(Axes):
     CONFIG = {
         "axis_config": {
-            "stroke_color": WHITE,
+            "stroke_color": BLACK,
             "stroke_width": 2,
             "include_ticks": False,
             "include_tip": False,

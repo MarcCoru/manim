@@ -174,16 +174,16 @@ class SVGMobject(VMobject):
         corner_radius = rect_element.getAttribute("rx")
 
         # input preprocessing
-        if fill_color in ["", "none", "#FFF", "#FFFFFF"] or Color(fill_color) == Color(WHITE):
+        if fill_color in ["", "none", "#FFF", "#FFFFFF"] or Color(fill_color) == Color(BLACK):
             opacity = 0
             fill_color = BLACK  # shdn't be necessary but avoids error msgs
         if fill_color in ["#000", "#000000"]:
-            fill_color = WHITE
-        if stroke_color in ["", "none", "#FFF", "#FFFFFF"] or Color(stroke_color) == Color(WHITE):
+            fill_color = BLACK
+        if stroke_color in ["", "none", "#FFF", "#FFFFFF"] or Color(stroke_color) == Color(BLACK):
             stroke_width = 0
             stroke_color = BLACK
         if stroke_color in ["#000", "#000000"]:
-            stroke_color = WHITE
+            stroke_color = BLACK
         if stroke_width in ["", "none", "0"]:
             stroke_width = 0
 

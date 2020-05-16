@@ -2,7 +2,7 @@ from manimlib.camera.camera import Camera
 from manimlib.constants import FRAME_HEIGHT
 from manimlib.constants import FRAME_WIDTH
 from manimlib.constants import ORIGIN
-from manimlib.constants import WHITE
+from manimlib.constants import BLACK
 from manimlib.mobject.frame import ScreenRectangle
 from manimlib.mobject.types.vectorized_mobject import VGroup
 from manimlib.utils.config_ops import digest_config
@@ -27,7 +27,7 @@ class MovingCamera(Camera):
 
     CONFIG = {
         "fixed_dimension": 0,  # width
-        "default_frame_stroke_color": WHITE,
+        "default_frame_stroke_color": BLACK,
         "default_frame_stroke_width": 0,
     }
 

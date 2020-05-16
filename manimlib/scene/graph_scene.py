@@ -844,7 +844,7 @@ class GraphScene(Scene):
 
         return group
 
-    def add_T_label(self, x_val, side=RIGHT, label=None, color=WHITE, animated=False, **kwargs):
+    def add_T_label(self, x_val, side=RIGHT, label=None, color=BLACK, animated=False, **kwargs):
         """
         This method adds to the Scene:
             -- a Vertical line from the x-axis to the corresponding point on the graph/curve.

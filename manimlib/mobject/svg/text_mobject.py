@@ -28,7 +28,7 @@ class TextSetting(object):
 class Text(SVGMobject):
     CONFIG = {
         # Mobject
-        'color': consts.WHITE,
+        'color': consts.BLACK,
         'height': None,
         'width': None,
         'fill_opacity': 1,
