@@ -24,6 +24,7 @@
 %------------New packages-----------
 % \usepackage{emerald} % This fonts could be a problem on Linux & Mac
 \usepackage{listings}
+\usepackage{tumcolors}
 \usepackage{abraces}
 \usepackage{multicol}
 \usepackage{multirow}
@@ -31,6 +32,17 @@
 \usepackage{musixtex}
 \usepackage{circuitikz}
 \usepackage{tikz}
+\usepackage[ruled,vlined]{algorithm2e}
+\newlength{\commentWidth}
+\setlength{\commentWidth}{7cm}
+\newcommand{\atcp}[1]{\tcp*[r]{\makebox[\commentWidth]{#1\hfill}}}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sansmath} % Enables turning on sans-serif math mode, and using other environments
+\sansmath % Enable sans-serif math for rest of document
+
+
 \usetikzlibrary{shapes,arrows,automata,positioning,decorations.pathmorphing}
 \usetikzlibrary{arrows,shapes,trees}
 \usetikzlibrary{intersections}
@@ -47,6 +59,9 @@
 \usetikzlibrary{snakes}
 \usetikzlibrary{topaths}
 \usetikzlibrary{babel}
+
+\usetikzlibrary{external}
+\tikzexternaldisable
 
 \lstdefinestyle{basic}
 {
